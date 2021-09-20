@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <title>Ratings</title>
+    <script src="rating.js"></script>
+    <style>
+        body {
+         font-family: Verdana;
+        }
+        h1, h2, h3 {
+         color: darkblue;
+        }
+        .rating-circle {
+         height: 2em;
+         width: 2em;
+         border: .1em solid black;
+         border-radius: 1.1em;
+         display: inline-block;
+         margin: 0;
+         padding: .1em;
+        }
+        .rating-hover {
+         background-color: yellow;
+        }
+        .rating-chosen {
+         background-color: green;
+        }
+       </style>
+      
+
+</head>
+<body>
+    <div class="container">
+        <h1 >Contoso Web Developer Conference</h1>
+        <h2>Finding elements using jQuery</h2>
+        <div>This session is about identifying elements using jQuery methods and selectors.</div>
+        <h3>Rate this session</h3>
+        <div id="container-fluid rating-container">
+        <div class="rating-circle " id="rate1" ></div>
+        <div class="rating-circle" id="rate2"></div>
+        <div class="rating-circle" id="rate3"></div>
+        <div class="rating-circle" id="rate4"></div>
+        <div class="rating-circle" id="rate5"></div>
+        </div>
+        <p>Your Rating is <span ></span></p>
+    </div>  
+
+   
+    
+</body>
+</html>
